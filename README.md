@@ -1,8 +1,15 @@
+This is a test code with 2 screens
+
+Below are the screenshots of the app
+
+![alt text](https://github.com/hkhawar21/worktech-test/blob/main/src/assets/images/Screen1.png)
+![alt text](https://github.com/hkhawar21/worktech-test/blob/main/src/assets/images/Screen2.png)
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
 ## Step 1: Start the Metro Server
 
