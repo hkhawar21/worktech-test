@@ -1,9 +1,6 @@
 import { useAppDispatch, useAppSelector } from "shared/hooks/useRedux";
 import { removeSpaceAtEnd } from "shared/utils/formatter";
-import {
-  addToSavedSavedValues,
-  setInputTextValue,
-} from "store/slices/SavedInfo/SavedInfoSlice";
+import { addToSavedValues } from "store/slices/SavedInfo/SavedInfoSlice";
 import * as Yup from "yup";
 
 const useInputValues = () => {
@@ -15,17 +12,12 @@ const useInputValues = () => {
   });
 
   function saveValue(value: string) {
-    dispatch(addToSavedSavedValues(removeSpaceAtEnd(value)));
-  }
-
-  function onChangeText(text: string) {
-    dispatch(setInputTextValue(text));
+    dispatch(addToSavedValues(removeSpaceAtEnd(value)));
   }
 
   return {
     validationSchema,
     saveValue,
-    onChangeText,
     savedList,
   };
 };

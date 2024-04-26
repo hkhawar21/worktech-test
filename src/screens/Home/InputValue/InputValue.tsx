@@ -7,8 +7,7 @@ import { Formik } from "formik";
 import { useStatusBar } from "shared/hooks/useStatusBar";
 
 const InputValue = (): JSX.Element => {
-  const { onChangeText, saveValue, validationSchema, savedList } =
-    useInputValues();
+  const { saveValue, validationSchema, savedList } = useInputValues();
   useStatusBar("dark-content");
 
   return (
@@ -25,7 +24,6 @@ const InputValue = (): JSX.Element => {
               value={values.value}
               onChangeText={(text) => {
                 handleChange("value")(text);
-                onChangeText(text);
               }}
               placeholder="Enter anything you want to save..."
               error={errors.value}

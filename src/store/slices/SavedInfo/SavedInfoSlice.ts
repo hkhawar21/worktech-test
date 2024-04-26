@@ -14,10 +14,7 @@ const savedInfoSlice = createSlice({
   name: "savedInfoSlice",
   initialState,
   reducers: {
-    setInputTextValue(state, { payload }: PayloadAction<string>) {
-      state.inputTextValue = payload;
-    },
-    addToSavedSavedValues(state, { payload }: PayloadAction<string>) {
+    addToSavedValues(state, { payload }: PayloadAction<string>) {
       const newValues = [payload, ...state.savedValues];
       state.savedValues = newValues;
     },
@@ -26,5 +23,4 @@ const savedInfoSlice = createSlice({
 
 export default savedInfoSlice.reducer;
 
-export const { addToSavedSavedValues, setInputTextValue } =
-  savedInfoSlice.actions;
+export const { addToSavedValues } = savedInfoSlice.actions;
